@@ -1,6 +1,6 @@
 'use server'
-import {apiKey} from './variables.js'
-
+const apiKey =process.env.NEXT_PUBLIC_API_KEY;
+    
 export async function getPopularMovies() {
     try {
         
